@@ -94,5 +94,7 @@ if(l) printf(" %d",tLines);
 if(w) printf(" %d",tWords);
 if(c) printf(" %d",tBytes);
 printf(" total\n");
+for(j=0;j<file_count;j++) free(file_names[j]);
+free(file_names);
 return 0;
 }
